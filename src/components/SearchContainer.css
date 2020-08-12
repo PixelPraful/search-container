@@ -1,0 +1,36 @@
+.search-title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.search-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+input {
+  width: 80%;
+  height: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.search-suggestions-container {
+  margin-top: 1rem;
+}
+
+.search-suggestions:first-child {
+  border-top: 1px solid #e3e3e3;
+}
+
+.search-suggestions {
+  width: 80%;
+  margin: 0px auto;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
