@@ -21,11 +21,11 @@ class SearchContainer extends React.Component {
           Authorization: `Bearer`,
           Accept: 'application/json',
           'Content-Type': 'application/json',
+          id: 'squareyard',
         },
       };
-      axios.post('https://dev1.taglr.com:8443/web-b2c/open/solr-search/v1.3/auto-suggestion', data, options)
+      axios.post('https://saas-api.galaktic.co:8443/web-b2c/open/solr-search/v1.3/auto-suggestion', data, options)
       .then(res => {
-        console.log(res.data.object);
         this.setState({
           suggestionList: res.data.object,
         })
